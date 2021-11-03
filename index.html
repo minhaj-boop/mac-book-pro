@@ -25,50 +25,50 @@
                     </div>
                     <div class="mt-10">
                         <h6 class="font-bold">Memory</h6>
-                        <button class="bg-indigo-400 hover:bg-indigo-700 text-white p-2 rounded">8GB unified memory</button>
-                        <button class="bg-indigo-400 hover:bg-indigo-700 text-white p-2 rounded">16GB unified memory</button>
+                        <button id="8gb-memory-btn" class="bg-indigo-400 hover:bg-indigo-700 text-white p-2 rounded">8GB unified memory</button>
+                        <button id="16gb-memory-btn" class="bg-indigo-400 hover:bg-indigo-700 text-white p-2 rounded">16GB unified memory</button>
                     </div>
                     <div class="mt-10">
                         <h6 class="font-bold">Storage</h6>
-                        <button class="bg-indigo-400 hover:bg-indigo-700 text-white p-2 rounded">256GB SSD storage</button>
-                        <button class="bg-indigo-400 hover:bg-indigo-700 text-white p-2 rounded">500GB SSD storage</button>
-                        <button class="bg-indigo-400 hover:bg-indigo-700 text-white p-2 rounded">1TB SSD storage</button>
+                        <button id="256gb-storage-btn" class="bg-indigo-400 hover:bg-indigo-700 text-white p-2 rounded">256GB SSD storage</button>
+                        <button id="500gb-storage-btn" class="bg-indigo-400 hover:bg-indigo-700 text-white p-2 rounded">500GB SSD storage</button>
+                        <button id="1tb-storage-btn" class="bg-indigo-400 hover:bg-indigo-700 text-white p-2 rounded">1TB SSD storage</button>
                     </div>
                     <div class="mt-10">
                         <h6 class="font-bold">Choose your delivery option</h6>
-                        <button class="bg-indigo-400 hover:bg-indigo-700 text-white p-2 rounded">Friday, Aug 25 FREE Prime Delivery</button>
-                        <button class="bg-indigo-400 hover:bg-indigo-700 text-white p-2 rounded">Friday, Aug 21 Delivery charge $20</button>
+                        <button id="free-delivery-btn" class="bg-indigo-400 hover:bg-indigo-700 text-white p-2 rounded">Friday, Aug 25 FREE Prime Delivery</button>
+                        <button id="paid-delivery-btn" class="bg-indigo-400 hover:bg-indigo-700 text-white p-2 rounded">Friday, Aug 21 Delivery charge $20</button>
                     </div>
                     <div class="mt-10">
                         <table class="table table-striped">
                             <tbody class="font-bold text-gray-600">
                               <tr>
                                 <td>Best Price</td>
-                                <td>$1299</td>
+                                <td>$<span id="best-price">1299</span></td>
                               </tr>
                               <tr>
                                 <td>Extra Memory Cost</td>
-                                <td>$<span>00</span></td>
+                                <td>$<span id="memory-cost">00</span></td>
                               </tr>
                               <tr>
                                 <td>Extra Storage Cost</td>
-                                <td>$<span>00</span></td>
+                                <td>$<span id="storage-cost">00</span></td>
                               </tr>
                               <tr>
                                 <td>Delivery Charge</td>
-                                <td>$<span>00</span></td>
+                                <td>$<span id="delivery-charge">00</span></td>
                               </tr>
                               <tr>
                                 <td>Total Price</td>
-                                <td>$<span>00</span></td>
+                                <td>$<span id="total-price">00</span></td>
                               </tr>
                             </tbody>
                           </table>
                     </div>
                     <div class="mt-10">
                         <h6 class="font-medium">Add Promo Code</h6>
-                        <input class="rounded border-2 border-indigo-400 bg-gray-200 focus:bg-gray-100 p-2" type="text">
-                        <button class="bg-indigo-600 hover:bg-indigo-800 px-3 py-2 rounded text-white">Apply</button>
+                        <input id="code-input" class="rounded border-2 border-indigo-400 bg-gray-200 focus:bg-gray-100 p-2" type="text">
+                        <button id="apply-btn" class="bg-indigo-600 hover:bg-indigo-800 px-3 py-2 rounded text-white">Apply</button>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,8 @@
     </main>
     <footer class="container pt-10">
         <hr>
-        <h1 class="font-medium text-center text-gray-600">Total: $<span>1299</span></h1>
+        <h1 class="font-medium text-center text-gray-600">Total: $<span id="bottom-total">1299</span></h1>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
