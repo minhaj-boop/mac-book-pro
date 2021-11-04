@@ -88,6 +88,9 @@ document.getElementById('apply-btn').addEventListener('click', function() {
         totalCost.innerText = parseInt(newTotalCost) - parseInt(discountedCost);
 
         //update bottom total cost
-        document.getElementById('bottom-total').innerText = parseInt(newTotalCost) - parseInt(discountedCost); 
+        document.getElementById('bottom-total').innerText = parseInt(newTotalCost) - parseInt(discountedCost);
+        
+        //clear promocode field
+        newPromoCode.value = ''; 
     }
 });
