@@ -91,6 +91,6 @@ document.getElementById('apply-btn').addEventListener('click', function() {
         document.getElementById('bottom-total').innerText = parseInt(newTotalCost) - parseInt(discountedCost);
         
         //clear promocode field
-        newPromoCode.value = ''; 
+        promoCode.value = ''; 
     }
 });
